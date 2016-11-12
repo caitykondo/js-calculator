@@ -43,15 +43,19 @@ function calculatorModule() {
    * @param { Number } x
    */
     function add(x) {
-      total = total + x;
-     }
+      if(!isNaN(x)){
+        total = total + x;
+      }
+    }
 
   /**
    * Subtracts the value passed in from `total`
    * @param  { Number } x
    */
    function subtract(x) {
-     total = total - x;
+    if(!isNaN(x)){
+      total = total - x;
+    }
    }
 
   /**
@@ -59,16 +63,21 @@ function calculatorModule() {
    * @param  { Number } x
    */
    function multiply(x) {
+    if(!isNaN(x)){
      total = total * x;
-   }
+    }
+  }
+
 
   /**
    * Divides the value passing in by `total`
    * @param  { Number } x
    */
    function divide(x) {
-     total = total / x;
-   }
+    if(!isNaN(x)){
+      total = total / x;
+    }
+  }
 
   /**
    * Return the value stored at `memory`
