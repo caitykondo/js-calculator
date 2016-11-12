@@ -34,7 +34,9 @@ function calculatorModule() {
    * Return the value of `total`
    * @return { Number }
    */
-
+    function getTotal() {
+     return total;
+   }
 
   /**
    * Sums the value passed in with `total`
