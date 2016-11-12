@@ -5,14 +5,21 @@
  * @variable PRIVATE { Number } `total`
  * @return {object} `calculator` object that can be used
  */
-function calculatorModule() {
-  var memory;
-  var total;
-  var calculator = {
-  };
-  return calculator;
-}
 
+function calculatorModule() {
+  let memory = 0;
+  let total = 0;
+  let calculator = {
+    load: load,
+    getTotal: getTotal,
+    add: add,
+    subtract: subtract,
+    multiply: multiply,
+    divide: divide,
+    recallMemory: recallMemory,
+    saveMemory: saveMemory,
+    clearMemory: clearMemory
+  };
   /**
    * sets the `total` to the number passed in
    * @param  { Number } x
@@ -65,7 +72,10 @@ function calculatorModule() {
    * Clear the value stored at `memory`
    */
 
+
   /**
    * Validation
    */
 
+return calculator;
+}
