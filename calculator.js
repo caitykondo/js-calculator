@@ -81,12 +81,18 @@ function calculatorModule() {
   /**
    * Stores the value of `total` to `memory`
    */
-
+   function saveMemory() {
+    memory = total;
+     return memory;
+   }
 
   /**
    * Clear the value stored at `memory`
    */
-
+   function clearMemory() {
+     memory = 0;
+     return memory;
+   }
 
   /**
    * Validation
