@@ -42,19 +42,25 @@ function calculatorModule() {
    * Sums the value passed in with `total`
    * @param { Number } x
    */
-
+    function add(x) {
+      total = total + x;
+     }
 
   /**
    * Subtracts the value passed in from `total`
    * @param  { Number } x
    */
-
+   function subtract(x) {
+     total = total - x;
+   }
 
   /**
    * Multiplies the value by `total`
    * @param  { Number } x
    */
-
+   function multiply(x) {
+     total = total * x;
+   }
 
   /**
    * Divides the value passing in by `total`
